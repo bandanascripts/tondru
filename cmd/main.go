@@ -4,7 +4,6 @@ import (
 	"context"
 	"log"
 	"net/http"
-
 	"github.com/bandanascripts/tondru/pkg/core"
 	"github.com/bandanascripts/tondru/pkg/server/routes"
 	"github.com/bandanascripts/tondru/pkg/service/redis"
@@ -25,7 +24,7 @@ func main() {
 	var r = gin.Default()
 	routes.RegisteredRoutes(r)
 
-	if err := http.ListenAndServe(":8080", r); err != nil {
-		log.Fatalf("failed to start server at port 8080 : %v", err)
+	if err := http.ListenAndServe("port", r); err != nil {
+		log.Fatalf("failed to start server at port : %v", err)
 	}
 }
