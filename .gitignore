@@ -1,0 +1,41 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Vendor directory (if you use `go mod vendor`)
+/vendor/
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Environment and config
+.env
+.env.*
+air.toml
+.air.toml
+
+# Logs
+*.log
+
+# GitHub Codespaces
+.devcontainer/
+
+# By file name
+air
